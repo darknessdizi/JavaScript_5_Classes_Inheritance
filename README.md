@@ -1,5 +1,7 @@
 # Домашнее задание к лекции «Классы, наследование»
 
+[![Build status](https://ci.appveyor.com/api/projects/status/heb9g1k2vryo1qud?svg=true)](https://ci.appveyor.com/project/darknessdizi/javascript-5-classes-inheritance)
+
 **Важно**: каждая задача выполняется в виде отдельного проекта с собственным GitHub репозиторием.
 
 **Важно**: код должен проходить ESLint без ошибок.

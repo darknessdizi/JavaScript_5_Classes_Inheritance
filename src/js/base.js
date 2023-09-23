@@ -1,14 +1,14 @@
 export default class Character {
-  constructor(name, attack, defence) {
-    this.compaireName(name);
-    this.findType(this.constructor.name);
+  constructor(name, type) {
+    this.nameVerification(name);
+    this.typeCheck(type);
     this.health = 100;
     this.level = 1;
-    this.attack = attack;
-    this.defence = defence;
+    this.attack = undefined;
+    this.defence = undefined;
   }
 
-  compaireName(name) {
+  nameVerification(name) {
     const clearName = name.trim();
     if ((clearName.length < 2) || (clearName.length > 10)) {
       throw new Error(`Некорректное имя - "${name}"`);
@@ -16,7 +16,7 @@ export default class Character {
     this.name = clearName;
   }
 
-  findType(type) {
+  typeCheck(type) {
     if (!Character.typeUsers.includes(type)) {
       throw new Error(`Некорректный тип пользователя - "${type}"`);
     }

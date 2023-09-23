@@ -13,3 +13,7 @@ test('Проверка создания объекта класса Undead', () 
   const obj = new Undead('Нежить');
   expect(obj).toEqual(standardObject);
 });
+
+test('Ошибка передачи типа объекта', () => {
+  expect(() => new Undead('Нежить', 'WrongType')).toThrow();
+});

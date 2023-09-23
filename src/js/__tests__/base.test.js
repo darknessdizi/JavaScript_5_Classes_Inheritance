@@ -3,7 +3,7 @@ import Bowman from '../bowman';
 
 // Тест на попытку создания объектов родительского класса Character
 test('Создание объекта родительского класса Character', () => {
-  expect(() => new Character('Parent', 50, 50)).toThrow();
+  expect(() => new Character('Ivan', 'Character')).toThrow();
 });
 
 // Тест на создание объектов с разной длиной имени

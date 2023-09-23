@@ -13,3 +13,7 @@ test('Проверка создания объекта класса Bowman', () 
   const obj = new Bowman('Лучник');
   expect(obj).toEqual(standardObject);
 });
+
+test('Ошибка передачи типа объекта', () => {
+  expect(() => new Bowman('Лучник', 'WrongType')).toThrow();
+});

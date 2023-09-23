@@ -13,3 +13,7 @@ test('Проверка создания объекта класса Zombie', () 
   const obj = new Zombie('Зомби');
   expect(obj).toEqual(standardObject);
 });
+
+test('Ошибка передачи типа объекта', () => {
+  expect(() => new Zombie('Зомби', 'WrongType')).toThrow();
+});

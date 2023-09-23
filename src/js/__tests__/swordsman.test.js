@@ -13,3 +13,7 @@ test('Проверка создания объекта класса Swordsman', 
   const obj = new Swordsman('Шпага');
   expect(obj).toEqual(standardObject);
 });
+
+test('Ошибка передачи типа объекта', () => {
+  expect(() => new Swordsman('Шпага', 'WrongType')).toThrow();
+});

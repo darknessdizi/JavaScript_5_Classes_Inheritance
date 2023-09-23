@@ -13,3 +13,7 @@ test('Проверка создания объекта класса Daemon', () 
   const obj = new Daemon('Демон');
   expect(obj).toEqual(standardObject);
 });
+
+test('Ошибка передачи типа объекта', () => {
+  expect(() => new Daemon('Демон', 'WrongType')).toThrow();
+});

@@ -13,3 +13,7 @@ test('Проверка создания объекта класса Magician', (
   const obj = new Magician('Маг');
   expect(obj).toEqual(standardObject);
 });
+
+test('Ошибка передачи типа объекта', () => {
+  expect(() => new Magician('Маг', 'WrongType')).toThrow();
+});
